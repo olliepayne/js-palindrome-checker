@@ -2,15 +2,23 @@ const inputEl = document.getElementById('word-input')
 const msgEl = document.getElementById('message')
 
 const isPalindrome = (str) => {
-  // compare lowercase
-  // ignore forbidden characters
-  
-  let reversedStr = str.split("")
-  reversedStr = reversedStr.reverse()
-  reversedStr = reversedStr.join("")
+  const validChars = 
+    [
+      'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+      't', 'u', 'v', 'w', 'x', 'y', 'z'
+    ]
 
-  for(const char in str) {
-    if(str[char] !== reversedStr[char]) return false
+  let original = str.toLowerCase()
+  let copy = ''
+  for(const char in original) {
+    if(validChars.includes(original[char])) copy += original[char]
+  }
+  original = copy
+  
+  let reversed = original.split("").reverse().join("")
+  
+  for(const char in original) {
+    if(original[char] !== reversed[char]) return false
   }
 
   return true
