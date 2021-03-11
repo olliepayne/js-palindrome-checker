@@ -2,7 +2,7 @@ const inputEl = document.getElementById('word-input')
 const msgEl = document.getElementById('message')
 
 const isPalindrome = (str) => {
-  const reversedStr = str.split("")
+  let reversedStr = str.split("")
   reversedStr = reversedStr.reverse()
   reversedStr = reversedStr.join("")
 
@@ -14,8 +14,13 @@ const isPalindrome = (str) => {
 }
 
 function checkPalindrome() {
-  const word = inputEl.innerText
-  msgEl.innerText = `The word ${word} ${isPalindrome(word) ? 'is not Palindrome' : 'is Palindrome'}`
+  const word = inputEl.value
+  console.log(word)
+  if(word) {
+    msgEl.innerText = `The word ${word} ${isPalindrome(word) ? 'is Palindrome' : 'is NOT Palindrome'}`
+  } else {
+    msgEl.innerText = 'You must enter a word!'
+  }
 }
 const checkBtn = document.getElementById('check-btn')
 checkBtn.addEventListener('click', checkPalindrome)
