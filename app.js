@@ -16,7 +16,7 @@ const isPalindrome = (str) => {
   original = copy
   
   let reversed = original.split("").reverse().join("")
-  
+
   for(const char in original) {
     if(original[char] !== reversed[char]) return false
   }
@@ -27,7 +27,7 @@ const isPalindrome = (str) => {
 function checkPalindrome() {
   const str = inputEl.value
   if(str) {
-    msgEl.innerText = `The text ${str} ${isPalindrome(str) ? 'IS Palindrome' : 'IS NOT Palindrome'}`
+    msgEl.innerText = `The text '${str}' ${isPalindrome(str) ? 'IS Palindrome' : 'IS NOT Palindrome'}`
   } else {
     msgEl.innerText = 'You must enter a word!'
   }
