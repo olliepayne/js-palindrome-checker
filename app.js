@@ -14,10 +14,9 @@ const isPalindrome = (str) => {
 }
 
 function checkPalindrome() {
-  const word = inputEl.value
-  console.log(word)
-  if(word) {
-    msgEl.innerText = `The word ${word} ${isPalindrome(word) ? 'is Palindrome' : 'is NOT Palindrome'}`
+  const str = inputEl.value
+  if(str) {
+    msgEl.innerText = `The text ${str} ${isPalindrome(str) ? 'IS Palindrome' : 'IS NOT Palindrome'}`
   } else {
     msgEl.innerText = 'You must enter a word!'
   }
