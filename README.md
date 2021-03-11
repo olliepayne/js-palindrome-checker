@@ -9,7 +9,7 @@
 <hr>
 
 ### About
-Common interview / coding challenge -- Palindrome algorithm
+Common interview / coding challenge -- Palindrome checker
 
 ### Screenshots
 *none
