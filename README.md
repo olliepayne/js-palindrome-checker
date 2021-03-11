@@ -1,6 +1,10 @@
 # JS Palindrome Checker
 
 ## [Deployment Link](http://op-js-palindrome-checker.surge.sh/)
+<br>
+v1.1
+<br>
+* polished palindrome algorithm
 <hr>
 **Known Bugs**
 <br>
