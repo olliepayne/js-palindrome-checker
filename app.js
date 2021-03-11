@@ -2,6 +2,9 @@ const inputEl = document.getElementById('word-input')
 const msgEl = document.getElementById('message')
 
 const isPalindrome = (str) => {
+  // compare lowercase
+  // ignore forbidden characters
+  
   let reversedStr = str.split("")
   reversedStr = reversedStr.reverse()
   reversedStr = reversedStr.join("")

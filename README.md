@@ -24,4 +24,5 @@ My first project back after a week off. Everything clicked and I felt refreshed.
 
 #### Icebox
 (In no partucular order)
+* Ignore certain characters and white spaces.
 * API calls to database of common Palindromes (simply for user satisfaction)
